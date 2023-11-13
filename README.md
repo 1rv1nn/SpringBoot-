@@ -1,12 +1,12 @@
 # Tarea Larga Spring Boot  
 
-# Cruz González Irvin Javier.
+### Cruz González Irvin Javier.
 
-# Intrucciones para ejecutar
+## Intrucciones para ejecutar
 
 1. Clonar proyecto
 ```
-
+https://github.com/1rv1nn/SpringBoot-.git
 ```
 
 2. Ejecutar
