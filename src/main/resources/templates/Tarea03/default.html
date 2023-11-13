@@ -1,0 +1,162 @@
+<!doctype html>
+<html 
+  lang="es"
+  xmlns:th="https://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  >
+
+  
+  <head><script src="../assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.118.2">
+    <title>kiwilimon</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>kiwilimon</title>
+  </head>
+<body>  
+  
+  <header class="site-header">
+    <div class="site-identity">
+      <a href="default"><img src="images/kiwilimon.png" alt="kiwilimon" /></a>
+      
+    </div>  
+    <nav layout:fragment="navbar" class="site-navigation">
+      <ul class="nav">
+        <li><a th:href="@{/}">Inicio</a></li> 
+        <li><a th:href="@{/recetas}">Recetas</a></li> 
+        <li><a th:href="@{/inventarioKiwi}">Inventario</a></li> 
+      </ul>
+    </nav>
+  </header>
+
+
+  <main layout:fragment="main_content">
+
+    <section class="py-5 text-center">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1>Ensaladas KiwiLimon</h1>
+          <h2 class="fw-light">Las mejores y más ricas ensaladas.</h2>    
+        </div>
+      </div>
+    </section>
+
+  <div class="album py-5 ">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="images/ensalada_mixta.webp" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></imh>
+            <div class="card-body">
+              <p class="card-text"> <h4>Ensalada Mixta</h4> No falla en los menús del día de los bares de cualquier pais. Se prepara con lechuga, tomate y cebolla. Otras versiones más completas le añaden aceitunas, atún, huevo duro, queso y jamón. Se aliña con sal, vinagre y aceite de oliva.Si tuviera que pensar en una ensalada clásica en mi vida la primera sería la ensalada mixta</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a th:href="@{/instruccion}">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                  </a>
+                </div>
+                    $ 150 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="images/ensalada_capresse.webp" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></imh>
+            <div class="card-body">
+              <p class="card-text">  <h4>Ensalada Capresse</h4> Es una ensalada italiana compuesta de rodajas de tomate y de mozzarella fresca, desde Capri nos llega esta delicia que combina el sabor suave de la mozzarella de bufala con el tomate fresco y jugoso y el aroma de las hojas de albahaca.Se le puede agregar pimienta en grano molida.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="recetas/ensaladaCaprese.html">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                  </a>
+                </div>
+                $170 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="images/ensalada_griega.webp" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></imh>
+            <div class="card-body">
+              <p class="card-text"> <h4>Ensalada Griega</h4>País cuna de la dieta mediterránea, hace un homenaje a sus mejores ingredientes típicos. Lleva tomate, cebolla, pepino, pimiento, queso feta y aceitunas negras. Su secreto radica en la frescura de los ingredientes y en el tamaño del corte, que será en daditos y tiras medianas.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="recetas/ensaladaGriega.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                    </a>
+                </div>
+                $174 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="images/ensalada_col.webp" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></imh>
+            <div class="card-body">
+              <p class="card-text"><h4>Ensalada de col o ‘coleslaw’</h4>La reconocerás porque la suelen servir en los restaurantes americanos junto con las hamburguesas. Al llevar col cruda, su sabor tiene defensores y detractores a partes iguales. Además del ingrediente que le da nombre, se prepara con zanahoria, lombarda, piña o manzana.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="recetas/ensaladaDeCol.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                    </a>
+                </div>
+                $190
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="images/ensalada_rusa.webp" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></imh>
+            <div class="card-body">
+              <p class="card-text"> <h4>Ensalada Rusa</h4>Llegados a este punto se inicia el debate porque este ensalada tiene variedades para todos los gustos. Aquí en España se prepara con verduras cocidas cortadas en dados (patata, zanahoria, guisantes…), atún, aceitunas y mayonesa o salsa rosa.Una ensalada típica de diversos países del mundo que ha evolucionado.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="recetas/ensaladaRusa.html">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                    </a>
+                </div>
+                $110
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img class="bd-placeholder-img card-img-top" src="images/ensalada-de-pasta-fria-saludable.webp" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title></imh>
+            <div class="card-body">
+              <p class="card-text"> <h4>Ensalada de Pasta Fria</h4>Una de esas recetas que no fallan en épocas de calor, la ensalada de pasta fría es una estrella de las recetas de verano junto al gazpacho, el salmorejo, las ensaladas de frutas o la ensalada César.Un plato completo y saludable, facil de adaptar a culaquier dieta, que admite mil y un ingredientes.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="recetas/ensaladaPastaFria.html">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Ver más</button>
+                  </a>
+                </div>
+                $250
+              </div>
+            </div>
+          </div>
+        </div>
+         <a th:href="@{/recetas}"><button type="button"  class="btn-group" > Ver todas las ensaladas</button></a> 
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="container">
+  <p>Plantilla tomada de: </p>
+  <p class="float-end"><a href="https://getbootstrap.com/docs/5.3/examples/">Examples bootstrap</a></p> 
+</footer>
+
+    </body>
+</html>

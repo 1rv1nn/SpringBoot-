@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html  lang="en"
+      xmlns:th="https://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="/Tarea03/default"
+>
+<head>
+    <head><script src="../assets/js/color-modes.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Hugo 0.118.2">
+        <title>Formulario Inventario</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">       
+        <link rel="stylesheet" href="../css/styles.css">       
+      </head>
+<body>
+
+
+<main layout:fragment="main_content">
+  <div class="card" style="width:600px;margin:auto; margin-top:50px">
+    <h2 class=""> Formulario Inventario </h2>
+    <form method="POST" action="validacionFormulario">
+      <table class="tableForm">
+        <tr>
+          <td>Código</td>
+          <td><input type="text" name="codigo"></td>
+        </tr>
+        <tr>
+          <td>Nombre</td>
+          <td><input type="text" name="nombre"></td>
+        </tr>
+        <tr>
+          <td>Tipo de Producto</td>
+          <td><select name="tipoProducto"> 
+            <option selected>Seleccione un Producto</option>
+            <option value="Producto Perecedero">Producto Perecedero</option>
+            <option value="Producto Empacar">Producto para Empacar</option>
+            <option value="Otros">Otros</option> </td>
+        </tr>
+        <tr>
+          <td>Fecha de Adquisición</td>
+          <td><input type="date"  name="fechaAdquision"></td>
+        </tr>
+        <tr>
+          <td>Fecha de Caducidad</td>
+          <td><input type="date" name="fechaCaducidad"></td>
+        </tr>
+        <tr>
+          <td>Cantidad</td>
+          <td><input type="number" name="cantidad" min="1" max="100"></td>
+        </tr>
+        <tr>
+          <td>Medida</td>
+          <td><select type="medida" name="medida">  
+            <optgroup label="Perecederos">
+                <option selected>Selecciona</option>
+                <option value="gramos">Gramos</option>
+                <option value="kg">Kilogramos</option>
+            </optgroup>
+
+            <optgroup label="Empaques">
+                <option value="pieza">Pieza</option>
+            </optgroup>
+        </select> </td>
+        </tr>
+        <tr>
+          <td>Descripción</td>
+          <td><input type="text" name="descripcion"></td>
+        </tr>
+        <tr>
+          <td>Proveedor</td>
+          <td><input type="text" name="proveedor"></td>
+        </tr>
+        <tr>
+          <td><button type="submit" class="btn btn-outline-success">Enviar</button></td>
+          <td><button type="reset" class="btn btn-outline-danger">Restaurar</button>
+            <a th:href="@{/inventarioKiwi}">
+              <button class="btn btn-outline-danger">Cancelar</button>
+            </a>  
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+   
+  </main>
+
+</body>
+</html>
